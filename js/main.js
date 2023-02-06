@@ -57,12 +57,14 @@ for(let i = 0; i < teamarray.length; i++){
     console.log(teamarray[i].img)
     
     cards.innerHTML += 
-    `<div class="card" style="width: 18rem;">
-    <img src="./img/${teamarray[i].img}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">${teamarray[i].name} ${teamarray[i].username}</h5>
-      <p class="card-text">${teamarray[i].job}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
+    `<div class="col-4">
+        <div class="card m-2" style="width: 18rem;">
+        <img src="./img/${teamarray[i].img}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">${teamarray[i].name} ${teamarray[i].username}</h5>
+          <p class="card-text">${teamarray[i].job}</p>
+          <a href="#" class="btn btn-primary">Fire</a>
+        </div>
+        </div>
     </div>`
 }
